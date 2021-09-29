@@ -51,6 +51,7 @@ public class Primate {
       }
    }
    
+   //Checking for the thing the monkey climbed and the how high it climbed
    public void climb(String object, int heightObj) {
       if (heightObj > 35) {
          System.out.println("The " + species + " climbed a " + heightObj + "m high " + object);
@@ -67,8 +68,14 @@ public class Primate {
       }
    }
    
+   //Outputting what the primate said
    public void communicate(String words) {
-      System.out.println("The " + species + " said " + words);
+      if (aggressive == true) {
+         System.out.println("The " + this.species + " screamed " + words);
+      }
+      else {
+         System.out.println("The " + this.species + " said " + words);
+      }
    }
    
 }
